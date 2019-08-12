@@ -16,6 +16,8 @@
 		}
 		.container{
 			margin-top: 10px;
+			padding-right: 0px;
+			padding-left: 0px;
 		}
 	</style>
 </head>
@@ -27,29 +29,35 @@
 				<h3 class="text-center">
 					The WindMill Probem
 				</h3>
-				<div class="context">
+				<div class="context mb-3 font-italic text-justify">
 					Let S be a finite set of at least two points in the plane. Assume that no three points of S are
 					collinear. By a windmill we mean a process as follows. Start with a line ℓ going through a
 					point P ∈ S. Rotate ℓ clockwise around the pivot P until the line contains another point Q
 					of S. The point Q now takes over as the new pivot. This process continues indefinitely, with
 					the pivot always being a point from S.
 					Show that for a suitable P ∈ S and a suitable starting line ℓ containing P, the resulting
-					windmill will visit each point of S as a pivot infinitely often.
-
+					windmill will visit each point of S as a pivot infinitely often
 				</div>
-				<div>
+				<a href="https://www.imo-official.org/problems/IMO2011SL.pdf">Problem shortlist with solutions - IMO 2011</a> Question C3 Page 7
+				<hr>
+				<!-- <div>
 					<iframe width="100%" src="https://www.youtube.com/embed/M64HUIJFTZM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div> -->
+				<div class="text-center mt-4 text-monospace">
+					I have created a simulation of the problem statment above, just to give you a visual feel for it, The main reason I did this because it looked beautiful. <br>
+					You can also go round changing the number of points in the canvas present to the right 
 				</div>
-				<div class="text-center">
-					I have created a simulation of the problem statment above, just to give you a visual feel for it, The main reason I did this because it looked beautiful. You can go round changing the number of points in the canvas present to the right 
-				</div>
-				<div class="row input">
-					<div class="col-5">
-						<span>Number of points</span>
+				<div class="row input mb-3 mt-4">
+					<div class="col-5 text-right align-self-center">
+						<span>Number of points:</span>
 					</div>
 					<div class="col-7">
 						<input type="number" name="cirlces" id="circle" class="form-control" value='20'>
 					</div>
+				</div>
+				<div class="text-center mt-3 pt-3 font-weight-bold font-italic">
+					Make with &hearts;<br>
+					Checkout <a href="https://github.com/jai-dewani/Windmill-problem-from-2011-IMO">Source code</a>
 				</div>
 			</div>
 			<div class="col-7">

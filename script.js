@@ -1,6 +1,6 @@
 var canvas = document.getElementById('myCanvas');
 var ctx = canvas.getContext('2d');
-
+ctx.lineWidth = 3;
 const dim = [600,600];
 var numberOfCircle = 20;
 
@@ -33,7 +33,7 @@ function init(){
 
 
 	drawLine(line,dim);
-	setInterval(moveLine,8,line,dim,random);
+	setInterval(moveLine,2,line,dim,random);
 }
 
 // Drawing Circles
